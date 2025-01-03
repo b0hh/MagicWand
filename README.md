@@ -7,6 +7,12 @@
 
 Chrome tarayıcısı için geliştirilmiş, Hugging Face yapay zeka modellerini kullanarak anında metin özetleri sunan bir uzantı. Web sayfalarında metin seçin ve şık bir yazma animasyonu efekti ile yapay zeka destekli özet alın.
 
+## Demo
+
+[![MagicWand Demo](public/icons/thumb.png)](https://www.youtube.com/watch?v=xf8okKYA8qs)
+
+> 🎥 MagicWand'ın nasıl çalıştığını görmek için videoyu izleyin
+
 ## Özellikler
 
 - 🤖 Yapay zeka ile anlık metin özetleme
