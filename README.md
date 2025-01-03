@@ -5,7 +5,7 @@
 
 [English](#magicwind---ai-text-summarizer-chrome-extension) | [Türkçe](#magicwind---yapay-zeka-destekli-metin-özetleme-uzantısı)
 
-Chrome tarayıcısı için geliştirilmiş, Hugging Face yapay zeka modellerini kullanarak anında metin özetleri sunan bir uzantı. Web sayfalarında metin seçin ve şık bir yazma animasyonu efekti ile yapay zeka destekli özet alın.
+Chrome tarayıcısı için geliştirilmiş, Hugging Face yapay zeka modellerini kullanarak anında metin özetleri sunan bir uzantı. 
 
 ## Demo
 
@@ -17,10 +17,7 @@ Chrome tarayıcısı için geliştirilmiş, Hugging Face yapay zeka modellerini 
 
 - 🤖 Yapay zeka ile anlık metin özetleme
 - ⚡ Hızlı ve duyarlı arayüz
-- ✨ Zarif yazma animasyonu
-- 📱 Duyarlı tasarım
 - 🌐 Tüm web sayfalarında çalışır
-- 🔒 Güvenli API yönetimi
 - 📝 Optimal özetler için 512 karakter limiti
 
 ## Teknoloji Altyapısı
@@ -144,13 +141,11 @@ Chrome uzantısını yapılandırır:
 - Web erişilebilir kaynaklar
 
 ### background/index.js
-Yönetir:
 - API anahtarı depolama
 - Arka plan işlemleri
 - Uzantı başlatma
 
 ### content/index.js
-İşler:
 - DOM entegrasyonu
 - React bileşeni başlatma
 - İçerik betiği kurulumu
