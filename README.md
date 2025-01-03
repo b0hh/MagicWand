@@ -67,29 +67,52 @@ Bu Chrome uzantısı, özel Chrome uzantı mimarisi gereksinimleriyle modern bir
 
 ## Kurulum
 
-1. Depoyu klonlayın
+### 1. Depoyu klonlayın
 ```bash
 git clone https://github.com/b0hh/MagicWand.git
 cd MagicWand
 ```
 
-2. Gerekli paketleri yükleyin
+### 2. Gerekli paketleri yükleyin
 ```bash
 npm install
 ```
 
-3. [Hugging Face API anahtarınızla](#hugging-face-api-anahtarı-alma) bir `.env` dosyası oluşturun
+### 3. [Hugging Face API anahtarınızla](#hugging-face-api-anahtarı-alma) bir `.env` dosyası oluşturun
 ```bash
 HUGGING_FACE_API_KEY=api_anahtariniz
 HUGGING_FACE_API_URL=api_adresiniz(demo sürümünde https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3)
 ```
 
-4. Projeyi derleyin
+> ⚠️ **Önemli**: Farklı bir AI model kullanmak istiyorsanız, `MagicWand.jsx` dosyasındaki input formatını ve parametreleri modele göre düzenlemeniz gerekir:
+
+```javascript
+// Mevcut input formatı (Mistral-7B-Instruct için)
+const formattedPrompt = `
+Provide a clear and concise summary of this text in 2-3 sentences:
+${text}
+`;
+
+// Mevcut parametre ayarları
+parameters: {
+    max_length: 100,
+    min_length: 20,
+    temperature: 0.1,
+    do_sample: false,
+    top_k: 50,
+    top_p: 0.85,
+    repetition_penalty: 1.2
+}
+```
+
+Her model farklı input formatı ve parametre gereksinimleri gerektirebilir. Kullanacağınız modelin dokümantasyonunu kontrol edin.
+
+### 4. Projeyi derleyin
 ```bash
 npm run build
 ```
 
-5. Chrome'a uzantıyı yükleyin
+### 5. Chrome'a uzantıyı yükleyin
 - Chrome'u açın
 - `chrome://extensions/` adresine gidin
 - "Geliştirici modu"nu etkinleştirin
@@ -154,11 +177,3 @@ MIT
 
 > ⚠️ **Önemli**: API anahtarınızı güvenli bir şekilde saklayın ve asla başkalarıyla paylaşmayın.
 
-### .env Dosyası Oluşturma
-
-```bash
-HUGGING_FACE_API_KEY=api_anahtariniz
-HUGGING_FACE_API_URL=api_adresiniz(demo sürümünde https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3)
-```
-
-> 💡 **Not**: `.env` dosyası projenin kök dizininde olmalıdır ve GitHub'a yüklenmemelidir.
