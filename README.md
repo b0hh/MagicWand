@@ -72,7 +72,7 @@ cd MagicWand
 npm install
 ```
 
-3. Hugging Face API anahtarınızla bir `.env` dosyası oluşturun
+3. [Hugging Face API anahtarınızla](#hugging-face-api-anahtarı-alma) bir `.env` dosyası oluşturun
 ```bash
 HUGGING_FACE_API_KEY=api_anahtariniz
 HUGGING_FACE_API_URL=api_adresiniz(demo sürümünde https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct)
@@ -133,3 +133,26 @@ Bu proje açık kaynaklıdır ve katkılara açıktır. Lütfen katkıda bulunma
 ## Lisans
 
 MIT
+
+### Hugging Face API Anahtarı Alma
+
+1. [Hugging Face](https://huggingface.co/) sitesine gidin ve üye olun
+2. Üye girişi yaptıktan sonra sağ üst köşedeki profil menüsüne tıklayın
+3. "Settings" (Ayarlar) seçeneğine tıklayın
+4. Sol menüden "Access Tokens" (Erişim Anahtarları) seçeneğine tıklayın
+5. "New token" (Yeni anahtar) butonuna tıklayın
+6. Token adı girin (örn: "MagicWand")
+7. "Role" (Rol) olarak "read" seçin
+8. "Generate token" (Anahtar oluştur) butonuna tıklayın
+9. Oluşturulan API anahtarını kopyalayın
+
+> ⚠️ **Önemli**: API anahtarınızı güvenli bir şekilde saklayın ve asla başkalarıyla paylaşmayın.
+
+### .env Dosyası Oluşturma
+
+```bash
+HUGGING_FACE_API_KEY=api_anahtariniz
+HUGGING_FACE_API_URL=api_adresiniz(demo sürümünde https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct)
+```
+
+> 💡 **Not**: `.env` dosyası projenin kök dizininde olmalıdır ve GitHub'a yüklenmemelidir.
