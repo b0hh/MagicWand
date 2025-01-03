@@ -104,7 +104,7 @@ npm run build
 
 ## Temel Bileşenler
 
-### MagicWind.jsx
+### MagicWand.jsx
 Ana bileşen şunları yönetir:
 - Metin seçimi algılama
 - Popup konumu hesaplama
@@ -158,7 +158,7 @@ MIT
 
 ```bash
 HUGGING_FACE_API_KEY=api_anahtariniz
-HUGGING_FACE_API_URL=api_adresiniz(demo sürümünde https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct)
+HUGGING_FACE_API_URL=api_adresiniz(demo sürümünde https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3)
 ```
 
 > 💡 **Not**: `.env` dosyası projenin kök dizininde olmalıdır ve GitHub'a yüklenmemelidir.
