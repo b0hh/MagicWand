@@ -60,8 +60,8 @@ Bu Chrome uzantısı, özel Chrome uzantı mimarisi gereksinimleriyle modern bir
 
 1. Depoyu klonlayın
 ```bash
-git clone https://github.com/b0hh/magic-wind.git
-cd magic-wind
+git clone https://github.com/b0hh/MagicWind.git
+cd MagicWind
 ```
 
 2. Gerekli paketleri yükleyin

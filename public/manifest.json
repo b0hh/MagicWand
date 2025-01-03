@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "MagicWind",
+    "version": "1.0.0",
+    "description": "AI-powered text summarizer using Hugging Face API",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "clipboardWrite"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "css": ["styles/magicwind.css"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "https://api-inference.huggingface.co/*"
+    ],
+    "web_accessible_resources": [{
+        "resources": ["icons/*"],
+        "matches": ["<all_urls>"]
+    }]
+}
