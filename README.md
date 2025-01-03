@@ -9,7 +9,7 @@ Chrome tarayıcısı için geliştirilmiş, Hugging Face yapay zeka modellerini 
 
 ## Demo
 
-[![MagicWand Demo](public/icons/thumb.png)](https://www.youtube.com/watch?v=xf8okKYA8qs)
+[![MagicWand Demo](public/icons/thumb.png)](https://youtu.be/3uMqgfbR6IY)
 
 > 🎥 MagicWand'ın nasıl çalıştığını görmek için videoyu izleyin
 
