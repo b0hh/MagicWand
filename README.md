@@ -1,4 +1,7 @@
-# MagicWind - Yapay Zeka Destekli Metin Özetleme Uzantısı
+<div align="center">
+  <img src="public/icons/icon48.png" alt="MagicWind Logo" width="48" height="48">
+  <h1>MagicWind - Yapay Zeka Destekli Metin Özetleme Uzantısı</h1>
+</div>
 
 [English](#magicwind---ai-text-summarizer-chrome-extension) | [Türkçe](#magicwind---yapay-zeka-destekli-metin-özetleme-uzantısı)
 
