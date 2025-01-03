@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, memo } from 'react';
-
+import { AlertTriangle } from 'lucide-react';
 const MagicWindIcon = memo(() => (
   <img 
     src={chrome.runtime.getURL('icons/icon48.png')} 
@@ -49,12 +49,12 @@ const MagicWand = () => {
     y = Math.max(10, y - 30);
     
     // Prevent popup from going off-screen
-    if (x + 280 > viewportWidth + scrollX) {
-      x = viewportWidth + scrollX - 280 - 10; // 10px margin from right edge
+    if (x + 300 > viewportWidth + scrollX) {
+      x = viewportWidth + scrollX - 300 - 10; // 10px margin from right edge
     }
     
-    if (y + 200 > viewportHeight + scrollY) {
-      y = rect.top + scrollY - 200 - 10; // Position above text if not enough space below
+    if (y + 220 > viewportHeight + scrollY) {
+      y = rect.top + scrollY - 220 - 10; // Position above text if not enough space below
     }
 
     return { x, y };
@@ -281,7 +281,10 @@ ${text}
                       • Selected: {selector.text.length} chars
                     </span>
                 </div>
-               
+                <div className="safety-notice">
+                <AlertTriangle  size={11}/>
+                MagicWand may give some wrong answers. Check every answer
+                 </div>
               </div>
             </>
           )}

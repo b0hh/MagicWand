@@ -124,6 +124,7 @@
     justify-content: space-between;
     align-items: center;
     background: #f8f9fa;
+    flex-direction: column;
 }
 
 .word-count {
@@ -234,5 +235,19 @@
 
 .char-count {
     color: #6b7280;
+}
+
+.safety-notice {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    color: #6b7280;
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
 }
 
