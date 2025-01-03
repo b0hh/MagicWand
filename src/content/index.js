@@ -2,16 +2,16 @@
 
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import MagicWind from '../components/MagicWind';
-import '../styles/magicwind.css';
+import MagicWand from '../components/MagicWand';
+import '../styles/magicwand.css';
 
 const initializeApp = () => {
   const container = document.createElement('div');
-  container.id = 'magic-wind-root';
+  container.id = 'magic-wand-root';
   document.body.appendChild(container);
 
   const root = createRoot(container);
-  root.render(<MagicWind />);
+  root.render(<MagicWand />);
 };
 
 initializeApp();

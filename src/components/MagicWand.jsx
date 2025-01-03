@@ -1,25 +1,21 @@
 import React, { useState, useEffect, useCallback, memo } from 'react';
-import PropTypes from 'prop-types';
 
 const MagicWindIcon = memo(() => (
   <img 
     src={chrome.runtime.getURL('icons/icon48.png')} 
-    alt="MagicWind"
+    alt="MagicWand"
     width="36"
     height="36"
   />
 ));
 
-MagicWindIcon.displayName = 'MagicWindIcon';
+MagicWindIcon.displayName = 'MagicWandIcon';
 
-const RETRY_DELAY = 1000;
-const MAX_RETRIES = 3;
-const TYPING_SPEED = 20;
-const CURSOR_TIMEOUT = 2000;
+
 const MAX_CHAR_LIMIT = 512;
 const TRUNCATE_MESSAGE = '... (text truncated due to length)';
 
-const MagicWind = () => {
+const MagicWand = () => {
   const [selector, setSelector] = useState({
     visible: false,
     expanded: false,
@@ -256,7 +252,7 @@ ${text}
           <div className="popup-header">
             <div className="header-content">
               <MagicWindIcon />
-              <span>MagicWind Summary</span>
+              <span>MagicWand Summary</span>
             </div>
             <button 
               className="close-button"
@@ -295,4 +291,4 @@ ${text}
   );
 };
 
-export default memo(MagicWind);
+export default memo(MagicWand);

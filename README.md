@@ -1,6 +1,6 @@
 <div align="center">
   <img src="public/icons/icon48.png" alt="MagicWind Logo" width="48" height="48">
-  <h1>MagicWind - Yapay Zeka Destekli Metin Özetleme Uzantısı</h1>
+  <h1>MagicWand - Yapay Zeka Destekli Metin Özetleme Uzantısı</h1>
 </div>
 
 [English](#magicwind---ai-text-summarizer-chrome-extension) | [Türkçe](#magicwind---yapay-zeka-destekli-metin-özetleme-uzantısı)
@@ -28,7 +28,7 @@ Chrome tarayıcısı için geliştirilmiş, Hugging Face yapay zeka modellerini 
 ## Proje Yapısı
 
 ```
-magicwind/
+magicwand/
 ├── public/                  # Statik dosyalar
 │   ├── icons/              # Uzantı simgeleri
 │   │   ├── icon16.png      # Araç çubuğu simgesi
@@ -37,7 +37,7 @@ magicwind/
 │   └── manifest.json       # Uzantı manifest yapılandırması
 ├── src/
 │   ├── components/         # React bileşenleri
-│   │   └── MagicWind.jsx  # Özet popup ana bileşeni
+│   │   └── MagicWand.jsx  # Özet popup ana bileşeni
 │   ├── background/         # Arka plan betikleri
 │   │   └── index.js       # API anahtarı depolama yönetimi
 │   ├── content/           # İçerik betikleri
@@ -63,8 +63,8 @@ Bu Chrome uzantısı, özel Chrome uzantı mimarisi gereksinimleriyle modern bir
 
 1. Depoyu klonlayın
 ```bash
-git clone https://github.com/b0hh/MagicWind.git
-cd MagicWind
+git clone https://github.com/b0hh/MagicWand.git
+cd MagicWand
 ```
 
 2. Gerekli paketleri yükleyin

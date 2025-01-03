@@ -1,11 +1,9 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: {
-    popup: './src/popup/index.js',
     content: './src/content/index.js',
     background: './src/background/index.js'
   },
@@ -22,7 +20,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-react']
+            presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
       },
@@ -33,16 +31,16 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/popup/popup.html',
-      filename: 'popup.html',
-      chunks: ['popup']
-    }),
     new CopyPlugin({
       patterns: [
-        { from: 'public/manifest.json', to: 'manifest.json' },
-        { from: 'public/icons', to: 'icons' },
-        { from: 'src/styles', to: 'styles' }
+        { 
+          from: 'public',
+          to: '.'
+        },
+        {
+          from: 'src/styles',
+          to: 'styles'
+        }
       ]
     }),
     new Dotenv()

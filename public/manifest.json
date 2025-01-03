@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "MagicWind",
+    "name": "MagicWand",
     "version": "1.0.0",
     "description": "AI-powered text summarizer using Hugging Face API",
     "permissions": [
@@ -25,7 +25,7 @@
         {
             "matches": ["<all_urls>"],
             "js": ["content.js"],
-            "css": ["styles/magicwind.css"]
+            "css": ["/styles/magicwand.css"]
         }
     ],
     "background": {
