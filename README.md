@@ -81,7 +81,7 @@ npm install
 3. [Hugging Face API anahtarınızla](#hugging-face-api-anahtarı-alma) bir `.env` dosyası oluşturun
 ```bash
 HUGGING_FACE_API_KEY=api_anahtariniz
-HUGGING_FACE_API_URL=api_adresiniz(demo sürümünde https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct)
+HUGGING_FACE_API_URL=api_adresiniz(demo sürümünde https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3)
 ```
 
 4. Projeyi derleyin
