@@ -1,5 +1,5 @@
 {
-  "name": "magicwind",
+  "name": "magicwand",
   "version": "1.0.0",
   "main": "webpack.config.js",
   "dependencies": {
@@ -328,6 +328,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "MIT",
+  "description": "AI-powered text summarizer Chrome extension using Hugging Face API"
 }
